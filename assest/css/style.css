@@ -1,0 +1,408 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+*{
+    text-decoration: none;
+}
+a:hover{
+    color:lightgray !important;
+    transition: all 0.3s;
+}
+
+/* tophead start*/
+.tophead{
+    color: green;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    z-index: 9;
+}
+@media only all and(max-width:991px){
+    .tophead{
+        display: none;
+    }
+}
+.backgroundhead{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px;
+    border-radius: 0px 0px 20px 20px;
+}
+.backgroundhead ul li a{
+    font-size: 13px;
+}
+.backgroundhead ul li .btn{
+    height: 20px;
+    width: 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* tohead end */
+
+/* navbar start */
+.container .navbar-brand img {
+    height: 70px;
+    width: 130px;
+    
+}
+.container{
+        font-size: 14px;
+}
+
+.navbar{
+    position:absolute;
+    top:50px;
+    left:0px;
+    right: 0px;
+    z-index: 3;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+@media only all and(max-width:991px){
+    .navbar{
+        position:absolute;
+        top:0px;
+        left:0px;
+        right: 0px;
+        z-index: 3;
+    }
+}
+/* navbar end */
+
+/* slidbar start*/
+.carousel .carousel-caption{
+    top: 40%;
+    left: 11%;
+    text-align: left;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border: 1px solid white;
+    border-radius: 50%;    
+}
+.carousel-control-prev-icon, .carousel-control-next-icon:hover{
+    border: 1px solid white;
+}
+
+ /* clock start*/
+ .clock{
+    position:absolute;
+        top:100px;
+        left:800px;
+        right: 0px;
+        z-index: 3;
+}
+.clock{
+    z-index: 1;
+}
+/* clock end*/
+/* clock animation here*/
+ .clock, img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+ /*clock animation end*/
+
+ /* slidbar end*/
+
+/*marquee start*/
+marquee{
+    box-shadow: 0px 0px 3px 2px #c9c9c9;
+}
+/*marquee end*/
+
+/*about us start*/
+#aboutf{
+    background-color: white;
+}
+#aboutus img{
+    box-shadow: 1px 1px 5px 1px #c9c9c9;
+    border-radius: 10px;
+}
+.mission{
+    padding: 15px 10px;
+    box-shadow: 0px 0px 3px 1px #c9c9c9;
+    border-radius: 15px;
+    background-color: lightcyan;
+    transition: all 0.3s;
+    transform: translateY(-5px);
+    border-bottom: 3px solid green;
+    transition: all 0.3s;
+}
+.aboutbg{
+    position: relative;
+}
+.aboutbg h1{
+    position: absolute;
+    color: #fff;
+    top: 55%;
+    left: 40%;
+}
+.mission:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/*about us end*/
+
+/* why start*/
+.why{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #c9c9c9;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.why:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/* why end*/
+
+/*who start*/
+#who {
+    background-color: white;
+    border-radius: 20px;
+}
+#whoo{
+    background-color: lightcyan;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 0px;
+    border-bottom: 3px solid green; 
+    transition: all 0.3s;
+}
+#whow img{
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+#whoo:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+#whow:hover{
+    transform: translateY(5px);
+    border-bottom: 0px solid green;
+}
+/*who end*/
+
+/*offer start*/
+.komal{
+    background-color: white;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 0px 0px 5px 0px #c9c9c9;
+    transition: all 0.3s;
+}
+.komal:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/*offer end*/
+
+/* work start*/
+#work{
+    background-color: white;
+}
+ .jagtap{
+    background-color: lightcyan;
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0px 0px 0px 0px;
+    border-bottom: 3px solid green;
+    height: 200px;
+    width: 260px;
+    transition: all 0.3s;
+
+}
+.jagtap:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/* work end*/
+
+/*client start*/
+.client{
+    background-color: whitesmoke;
+}
+#clientimg{
+    z-index: 1;
+}
+#clientnew{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px #c9c9c9;
+}
+ /*transition code of client start not working here*/
+.client{
+    flex: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+swiper-wraper{
+    padding:32px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #c9c9c9;
+    transition:all 0.3s ease-in-out;
+    border-radius:15px;
+    text-align:center;
+    width:75px;
+    margin : 35px auto 0px;
+    border-bottom: 3px solid green;
+}
+swiper-wraper {
+    margin-bottom:0px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    font-size: 13px;
+}
+/*transition code of client end*/
+/*client end*/
+
+/*needhelp start*/
+#needhelp{
+    background-color: white;
+}
+#iconbu{
+    border-bottom:3px solid green;
+    border-top:3px solid green;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px #c9c9c9 ;
+}
+.icon a{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: solid white;
+    border:1px solid whitesmoke;
+    box-shadow: 0px 0px 3px 0px #c9c9c9 ;
+}
+.icon a:hover{
+    background-color: #1c751d;
+    transform: all 00.3s;
+    color: white;
+}
+.fa-solid{
+    color: green;
+}
+.ganesh{
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #c9c9c9 ;
+    border-bottom:3px solid green;
+    border-top:3px solid green;
+}
+/*needhelp end*/
+
+/*capital start*/
+#capitalnew{
+    background-color:lightcyan;
+    border-radius: 20px;
+    box-shadow:0px 0px 2px 0px #c9c9c9;
+    border-bottom: 3px solid gray;
+    padding: 40px;
+}
+.container-fluid{
+    background-color: whitesmoke;
+}
+/*capital end*/
+
+/* company start*/
+#company{
+    background-color:white;
+    border-radius: 20px;
+    box-shadow:0px 0px 5px 0px #c9c9c9;
+    padding: 40px; 
+    transition: all 0.3s;  
+}
+#company:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/* company end*/
+
+/*reserch focus start*/
+#refo{
+    background-color:white;
+    border-radius: 20px;
+    box-shadow:0px 0px 5px 0px #c9c9c9;
+    padding: 20px; 
+    transition: all 0.3s; 
+}
+#refo:hover{
+    transform: translateY(5px);
+    border-bottom: 3px solid green;
+}
+/*reserch focus end*/
+
+/* whatsappp start*/
+        .imageLinkFit {
+            width: 4%;
+            height: 4%;
+            border-radius: 50%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            position: relative;
+        }     
+        .whatsappLink, img.vert-move {
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+        img.vert-move {
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+        @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        @keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+/* whatsappp end*/
+
+/*footer start*/
+footer {
+    text-align: left;
+    padding: 3px;
+    background-color: hwb(0 0% 100%);
+    color: hsla(0, 0%, 100%, 0.898);
+  }
+footer .container img {
+    height: 90px;
+    width: 150px;
+    }
+footer p {
+    color: hsla(0, 0%, 100%, 0.822);
+}    
+footer ul li a{
+    color: hwb(0 100% 0% / 0.822);
+    text-decoration: none;
+    padding: 0px 0px 10px 10px;
+    margin: 0px;
+}
+footer ul li{
+    list-style: none;
+}
+/*footer end*/
